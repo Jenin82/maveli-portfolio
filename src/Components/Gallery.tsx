@@ -1,5 +1,3 @@
-// components/Gallery.tsx
-import React from "react";
 
 function Gallery() {
     // Sample image URLs (replace with your own images)
