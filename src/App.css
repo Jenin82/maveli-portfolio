@@ -1,11 +1,13 @@
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	background-color: var(--yellow-light);
 	color: var(--black);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }

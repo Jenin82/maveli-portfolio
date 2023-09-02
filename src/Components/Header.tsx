@@ -4,6 +4,21 @@ import { Squash as Hamburger } from "hamburger-react";
 
 function Header() {
     const [isOpen, setOpen] = useState(false);
+
+	const handleScroll = (targetId: string) => {
+        const delay = 1000; // 1-second delay
+        console.log("Clicked:", targetId);
+        setTimeout(() => {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                console.log("Scrolling to:", targetId);
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                });
+            }
+        }, delay);
+    };
+
     return (
         <header>
             <div className={`ham`}>
@@ -18,28 +33,49 @@ function Header() {
             <nav>
                 <div className={`nav ${isOpen ? "show" : "hide"}`}>
                     <b>
-                        <a href="#home">Home</a>
+                        <a href="#home" onClick={() => handleScroll("home")}>
+                            Home
+                        </a>
                     </b>
                     <b>
-                        <a href="#about">About Maveli</a>
+                        <a href="#about" onClick={() => handleScroll("about")}>
+                            About Maveli
+                        </a>
                     </b>
                     <b>
-                        <a href="#legend">Legend</a>
+                        <a
+                            href="#legend"
+                            onClick={() => handleScroll("legend")}
+                        >
+                            Legend
+                        </a>
                     </b>
                     <b>
-                        <a href="#onam-festival">Onam Festival</a>
+                        <a
+                            href="#onam-festival"
+                            onClick={() => handleScroll("onam-festival")}
+                        >
+                            Onam Festival
+                        </a>
                     </b>
                     <b>
-                        <a href="#gallery">Gallery</a>
+                        <a
+                            href="#gallery"
+                            onClick={() => handleScroll("gallery")}
+                        >
+                            Gallery
+                        </a>
                     </b>
                     <b>
-                        <a href="#contact">Contact</a>
+                        <a
+                            href="#contact"
+                            onClick={() => handleScroll("contact")}
+                        >
+                            Contact
+                        </a>
                     </b>
                 </div>
             </nav>
-            <div className="logo">
-                <h1>Maveli's Portfolio</h1>
-            </div>
         </header>
     );
 }

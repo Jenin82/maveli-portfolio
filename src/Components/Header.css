@@ -4,7 +4,13 @@
 	align-items: center;
 	gap: 30px;
 	padding-top: 25px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
+	}
+	
+	header {
+		position: fixed;
+		z-index: 10;
+		background-color: var(--yellow-light);
 }
 
 .nav a{
@@ -25,7 +31,7 @@ nav b::before {
 	bottom: -3px;
 	left: 0;
 	width: 0;
-	height: 4px;
+	height: 5px;
 	background-color: var(--grey);
 	transition: width 0.3s ease-in-out;
 }
@@ -54,6 +60,12 @@ nav b:hover::before {
 	}
 	.hide {
 		display: none;
+	}
+	header {
+		width: 95vw;
+	}
+	.ham{
+		padding-top: 10px;
 	}
 }
 

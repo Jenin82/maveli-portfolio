@@ -1,0 +1,44 @@
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.hero-image {
+	overflow: hidden;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 10px solid var(--yellow);
+	position: relative;
+}
+
+.maveli {
+	object-fit: cover;
+	height: 200%;
+	width: 200%;
+	position: absolute;
+	top: -130px;
+	left: -150px;
+}
+
+.hero-title {
+	font-family: var(--heading);
+	text-align: center;
+	font-size: 50px;
+	margin: 10px;
+}
+
+.hero b {
+	padding: 5px;
+}
+
+.hero a {
+	color: var(--black);
+}
+
+.hero a:hover {
+	color: var(--grey);
+}
