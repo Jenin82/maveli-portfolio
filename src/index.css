@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Plus+Jakarta+Sans:wght@400;800&display=swap');
+
+:root {
+	--yellow: #FDC600;
+	--yellow-light: #FFE831;
+	--background: #F7F4F3;
+	--grey: #B2B6BD;
+	--black: #080708;
+	--font-size: 16px;
+	--heading: 'Monoton', cursive;
+	
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}

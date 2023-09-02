@@ -1,0 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--yellow-light);
+	color: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
