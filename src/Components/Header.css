@@ -51,6 +51,9 @@ nav b:hover::before {
 		display: none;
 	}
 }
+.hide {
+	width: 95vw;
+}
 
 @media (max-width: 450px) {
 	.nav {

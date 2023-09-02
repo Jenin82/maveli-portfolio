@@ -15,6 +15,7 @@ function Home() {
                     <a
                         href="https://en.wikipedia.org/wiki/Mahabali"
                         className="cta-button"
+                        target="_blank"
                     >
                         wiki page
                     </a>
