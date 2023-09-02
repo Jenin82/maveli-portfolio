@@ -17,10 +17,10 @@ function App() {
             <Home />
             <About />
             <Legend />
-            <OnamFestival />
+            {/* <OnamFestival />
             <Gallery />
             <Contact />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }

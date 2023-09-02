@@ -43,3 +43,12 @@
 .hero a:hover {
 	color: var(--grey);
 }
+
+@media (max-width: 450px) {
+	.hero-title {
+		max-width: 350px;
+	}
+	.hero b {
+		max-width: 350px;
+	}
+}
