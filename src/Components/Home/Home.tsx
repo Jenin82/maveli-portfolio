@@ -1,5 +1,5 @@
 import "./Home.css";
-import maveli from "../assets/maveli2.png";
+import maveli from "../../assets/maveli2.png";
 
 function Home() {
     return (

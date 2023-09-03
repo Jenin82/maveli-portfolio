@@ -9,6 +9,11 @@
 	--font-size: 16px;
 	--heading: 'Monoton', cursive;
 	width: 100%;
-	
+	scrollbar-width: none;
 	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* make scrollbar transparent */
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Legend.css";
-import rider from "../assets/rider.png";
+import rider from "../../assets/rider.png";
 
 function Legend() {
     // State to control the animation
