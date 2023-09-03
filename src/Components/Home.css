@@ -49,8 +49,11 @@
 	color: var(--grey);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 	.hero b {
 		text-align: center;
-	}	
+	}
+	.hero {
+		padding-top: 30px;
+	}
 }
