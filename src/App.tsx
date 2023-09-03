@@ -1,9 +1,8 @@
 // App.tsx
 import "./App.css";
 import About from "./Components/About";
-import Contact from "./Components/Contact";
+import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer";
-import Gallery from "./Components/Gallery";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Legend from "./Components/Legend";
@@ -18,9 +17,8 @@ function App() {
             <About />
             <Legend />
             <OnamFestival />
-            {/* <Gallery />
             <Contact />
-            <Footer /> */}
+            <Footer />
         </div>
     );
 }

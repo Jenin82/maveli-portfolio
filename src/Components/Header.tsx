@@ -60,14 +60,6 @@ function Header() {
                     </b>
                     <b>
                         <a
-                            href="#gallery"
-                            onClick={() => handleScroll("gallery")}
-                        >
-                            Gallery
-                        </a>
-                    </b>
-                    <b>
-                        <a
                             href="#contact"
                             onClick={() => handleScroll("contact")}
                         >
