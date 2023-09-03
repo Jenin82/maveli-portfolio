@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 import { Squash as Hamburger } from "hamburger-react";
 
-function Header() {
+function Header() { 
     const [isOpen, setOpen] = useState(false);
 
 	const handleScroll = (targetId: string) => {
@@ -20,7 +20,7 @@ function Header() {
     };
 
     return (
-        <header>
+        <div className="navWrapper">
             <div className={`ham`}>
                 <Hamburger
                     toggled={isOpen}
@@ -76,7 +76,7 @@ function Header() {
                     </b>
                 </div>
             </nav>
-        </header>
+        </div>
     );
 }
 

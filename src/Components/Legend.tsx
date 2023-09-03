@@ -12,25 +12,30 @@ function Legend() {
     };
 
     return (
-        <section className="legend-main">
+        <div className="legend-main">
             <div id="legend"></div>
-            <div className={"legend-content"}>
+            <div className="legend-content">
                 <h2 className="legend-title">The Legend of Maveli</h2>
                 <b className="legend-text">
-                    So no time to explain my story... on a journey right now
-                    <span className="btn" onClick={startAnimation}>
-                        OK
-                    </span>
+                    <p>
+                        So no time to explain my story... on a journey right now
+                        &nbsp;
+                        <span className="btn" onClick={startAnimation}>
+                            OK
+                        </span>
+                    </p>
                 </b>
-                <div
-                    className={` ${
-                        animate ? "move-image" : "initial-image-position"
-                    }`}
-                >
-                    <img src={rider} alt="" />
+                <div className="image">
+                    <div
+                        className={`${
+                            animate ? "move-image" : "initial-image-position"
+                        }`}
+                    >
+                        <img src={rider} alt="" />
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

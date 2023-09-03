@@ -2,8 +2,8 @@ import './About.css'
 
 function About() {
     return (
-        <section id="about-main">
-            <div id="about" ></div>
+        <div id="about-main">
+            <div id="about" className='about'></div>
             <div className="about-content">
                 <h2>About Maveli</h2>
                 <b>
@@ -43,7 +43,7 @@ function About() {
             <div className="image-container">
                 {/* Add a modern image or illustration of Maveli */}
             </div>
-        </section>
+        </div>
     );
 }
 

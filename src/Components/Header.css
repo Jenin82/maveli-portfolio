@@ -1,74 +1,79 @@
-.nav{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	padding-top: 25px;
-	padding-bottom: 20px;
-	}
-	
-	header {
-		position: fixed;
-		z-index: 10;
-		background-color: var(--yellow-light);
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
 }
 
-.nav a{
-	text-decoration: none;
-	color: var(--black);
+.navWrapper {
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+	background-color: var(--yellow-light);
+}
+.nav a {
+    text-decoration: none;
+    color: var(--black);
 }
 
 nav b {
-	position: relative;
-	text-decoration: none;
-	color: #333;
-	transition: color 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
 }
 
 nav b::before {
-	content: "";
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	width: 0;
-	height: 5px;
-	background-color: var(--grey);
-	transition: width 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: var(--grey);
+    transition: width 0.3s ease-in-out;
 }
 
 nav b:hover::before {
-	width: 100%;
+    width: 100%;
 }
 
 .ham {
-	display: flex;
-	align-items: end;
-	justify-content: end;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
-@media (min-width: 451px) {
-	.ham {
-		display: none;
-	}
+@media (min-width: 481px) {
+    .ham {
+        display: none;
+    }
 }
 .hide {
-	width: 95vw !important;
+    width: 95vw !important;
 }
 
-@media (max-width: 450px) {
-	.nav {
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-	}
-	.hide {
-		display: none;
-	}
-	header {
-		width: 95vw;
-	}
-	.ham{
-		padding-top: 10px;
-	}
+@media (max-width: 480px) {
+    .nav {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+		padding-top: 50px;
+        background-color: var(--yellow-light);
+    }
+    .hide {
+        display: none;
+    }
+    .ham {
+        padding-top: 10px;
+        position: absolute;
+        right: 30px;
+        top: 1px;
+    }
 }
-
