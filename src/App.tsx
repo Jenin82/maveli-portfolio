@@ -7,7 +7,7 @@ import Gallery from "./Components/Gallery";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Legend from "./Components/Legend";
-import OnamFestival from "./Components/OnamFestival";
+import OnamFestival from "./Components/OnamFestival/OnamFestival";
 
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
             <Home />
             <About />
             <Legend />
-            {/* <OnamFestival />
-            <Gallery />
+            <OnamFestival />
+            {/* <Gallery />
             <Contact />
             <Footer /> */}
         </div>

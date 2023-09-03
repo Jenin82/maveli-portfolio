@@ -1,0 +1,70 @@
+.onam-main{
+	min-height: 100vh;
+}
+
+#onam-festival {
+	padding: 30px;
+}
+
+.onam-content {
+	padding: 0 30px;
+}
+
+.onam-content h2 {
+	font-family: var(--heading);
+	font-size: 40px;
+}
+
+.onam-images{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 60px;
+	padding-top: 30px;
+}
+
+.onam-image{
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	overflow: hidden;
+	border: 5px solid var(--yellow);
+	position: relative;
+}
+
+.one {
+	object-fit: cover;
+	width: 232%;
+	position: absolute;
+	top: -42px;
+	left: -37px;
+}
+
+.two {
+	object-fit: cover;
+	width: 120%;
+	position: absolute;
+	top: 0px;
+	left: -32px;
+}
+
+.three {
+	object-fit: cover;
+	width: 190%;
+	position: absolute;
+	top: -50px;
+	left: -110px;
+}
+
+@media (max-width: 1000px) {
+	.onam-images{
+		gap: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.onam-images{
+		flex-direction: column;
+		gap: 40px;
+	}
+}
